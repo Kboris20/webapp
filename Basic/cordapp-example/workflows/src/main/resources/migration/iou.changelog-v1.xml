@@ -1,0 +1,24 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="R3.Corda" id="create_eval_state">
+        <createTable tableName="eval_states">
+            <column name="output_index" type="INT"/>
+            <column name="transaction_id" type="NVARCHAR(64)"/>
+            <column name="titreArticle" type="NVARCHAR(100)"/>
+            <column name="dateArticle" type="NVARCHAR(100)"/>
+            <column name="c1" type="NVARCHAR(100)"/>
+            <column name="c2" type="NVARCHAR(100)"/>
+            <column name="c3" type="NVARCHAR(100)"/>
+            <column name="c4" type="NVARCHAR(100)"/>
+            <column name="forme" type="NVARCHAR(100)"/>
+            <column name="comment" type="NVARCHAR(300)"/>
+            <column name="edupoint" type="NVARCHAR(100)"/>
+            <column name="teamAcademy" type="NVARCHAR(64)"/>
+            <column name="student" type="NVARCHAR(64)"/>
+            <column name="linear_id" type="NVARCHAR(64)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
